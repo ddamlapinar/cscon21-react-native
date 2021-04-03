@@ -1,33 +1,21 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {SafeAreaView, Button, Text, Alert} from 'react-native';
+import {SafeAreaView, View, Text} from 'react-native';
 
 function App() {
-  // VARIABLES
-  const number = 5;
-  const result = number * 2;
-  const user = {id: 1, name: 'Ezran', age: 27};
-
-  // LOGGING
-  console.log('Selam! ', result);
-
-  // REGULAR (NAMED) FUNCTION
-  // function handlePress() {
-  //   const displayName = user.name.toUpperCase();
-  //   Alert.alert('Merhaba ' + displayName);
-  // }
-
-  // ARROW FUNCTION
-  const handlePress = () => {
-    const displayName = user.name.toUpperCase();
-    Alert.alert('Merhaba ' + displayName);
-  };
-
+  // FLEXBOX
+  // https://reactnative.dev/docs/flexbox
   return (
-    <SafeAreaView>
-      {/* COMPONENT PROP */}
-      <Text style={{fontSize: 40, fontWeight: 'bold'}}>Selamlar!!</Text>
-      <Text>Sonuç: {result + 1}</Text>
-      <Button title="Gönder" onPress={handlePress} />
+    <SafeAreaView style={{flex: 1}}>
+      <View style={{flex: 3, backgroundColor: 'red'}}>
+        <Text>VIEW 1</Text>
+      </View>
+      <View style={{flex: 1, backgroundColor: 'blue'}}>
+        <Text>VIEW 2</Text>
+      </View>
+      <View style={{flex: 2, backgroundColor: 'green'}}>
+        <Text>VIEW 3</Text>
+      </View>
     </SafeAreaView>
   );
 }
