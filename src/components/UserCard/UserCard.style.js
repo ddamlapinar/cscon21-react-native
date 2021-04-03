@@ -24,4 +24,15 @@ export default StyleSheet.create({
     color: 'gray',
     marginLeft: 10,
   },
+  button_container: {
+    backgroundColor: '#1a237e',
+    padding: 10,
+    margin: 5,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+  button_text: {
+    fontWeight: 'bold',
+    color: 'white',
+  },
 });
