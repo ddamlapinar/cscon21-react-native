@@ -11,6 +11,7 @@ const UserCard = ({username, usertag, content, onSelect}) => {
       </View>
       <Text>{content}</Text>
 
+      {/* ÖDEV: Button componentini custom yapıya çevrilsin */}
       <TouchableOpacity
         style={styles.button_container}
         onPress={() => Alert.alert('CSCON21', `Hi, @${usertag}`)}>
